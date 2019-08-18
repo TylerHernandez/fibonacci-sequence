@@ -38,7 +38,6 @@ public class fibonacci {
 						//c and b are top numbers
 						a=c+b;
 						System.out.println(a);
-						
 						//break;
 					}
 					else {
