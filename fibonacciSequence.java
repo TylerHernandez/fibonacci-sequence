@@ -1,9 +1,11 @@
 package summer2019;
-
+import java.util.*;
 public class fibonacci {
 	public static void main(String[] args)
 	{
-		findfib(100);
+		Scanner input= new Scanner(System.in);
+		System.out.println("Enter your max number here: ");
+		findfib(input.nextInt());
 	}
 	
 	
