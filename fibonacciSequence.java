@@ -3,11 +3,25 @@ import java.util.*;
 public class fibonacci {
 	public static void main(String[] args)
 	{
-		Scanner input= new Scanner(System.in);
-		System.out.println("Enter your max number here: ");
-		findfib(input.nextInt());
+//		Scanner input= new Scanner(System.in);
+//		System.out.println("Enter your max number here: ");
+//		findfib(input.nextInt());
+		efficientFib();
 	}
 	
+	public static void efficientFib()
+	{
+		int a=0;
+		int b=1;
+		int c;
+		
+		for(int i=2; i<100; i++) {
+			c=a+b;
+			System.out.print(c + ", ");
+			a=b;
+			b=c;
+		}
+	}
 	
 	
 
